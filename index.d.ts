@@ -43,7 +43,8 @@ declare module "flexsearch" {
     where?: {[key: string]: string},
     field?: string | string[],
     bool?: "and" | "or" | "not"
-    //TODO: Sorting
+    sort: string,
+    order: "desc" | "asc"
   }
 
   interface SearchResults<T> {
